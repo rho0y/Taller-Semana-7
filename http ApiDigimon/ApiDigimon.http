@@ -1,0 +1,38 @@
+@host = https://localhost:44363
+
+### 1. GET · Obtener todos los domadores
+# (esta también funciona directo en el navegador)
+GET {{host}}/api/domadores
+
+### 2. POST · Crear domador (JSON)
+# Respuesta esperada: 201 Created con el DomadorId generado
+POST {{host}}/api/domadores
+Content-Type: application/json
+
+{ "Nombre": "Tai Kamiya", "Edad": 11 }
+
+### 3. POST · Crear domador (XML)
+# Tu WebApiConfig tiene UseXmlSerializer = true,
+# así que acepta XML simple sin espacios de nombres
+POST {{host}}/api/domadores
+Content-Type: application/xml
+
+<Domador><Nombre>Sora</Nombre><Edad>11</Edad></Domador>
+
+### 4. PUT · Actualizar domador con id=1
+PUT {{host}}/api/domadores/1
+Content-Type: application/json
+
+{ "DomadorId": 1, "Nombre": "Tai Kamiya", "Edad": 12 }
+
+### 5. DELETE · Eliminar domador con id=1
+# Respuesta esperada: 200 OK "Domador eliminado correctamente"
+DELETE {{host}}/api/domadores/1
+
+### 6. GET · Verificar después de eliminar
+GET {{host}}/api/domadores
+
+### 7. GET · Verificar GET /api/domadores/99
+
+GET {{host}}/api/domadores/99
+

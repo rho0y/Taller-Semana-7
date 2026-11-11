@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37827.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDigimon", "ApiDigimon\ApiDigimon.csproj", "{F52BC460-6E58-4745-BD92-C180666E6E25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F52BC460-6E58-4745-BD92-C180666E6E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F52BC460-6E58-4745-BD92-C180666E6E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F52BC460-6E58-4745-BD92-C180666E6E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F52BC460-6E58-4745-BD92-C180666E6E25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A2944F0-0B7D-4E47-9D21-E57DF00C2E26}
+	EndGlobalSection
+EndGlobal
